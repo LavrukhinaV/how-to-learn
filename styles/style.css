@@ -1,4 +1,4 @@
-..page {
+.page {
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
@@ -20,8 +20,6 @@
 .logo {
   height: 32px;
   width: 183px;
-  position: relative;
-  color: #1f1f1f;
 }
 
 .header__title {
@@ -68,22 +66,20 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .two-columns {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 80%;
-  min-width: 784px;
 }
 
 .two-columns__brief {
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   color: #2f80ed;
   font-weight: normal;
 }
@@ -93,6 +89,7 @@
   flex-direction: column;
   align-content: space-between;
   width: 80%;
+  min-width: 784px;
 }
 
 .two-columns__paragraph {
@@ -112,8 +109,7 @@
 }
 
 .digits {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding: 100px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,8 +120,7 @@
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
-  padding-bottom: 20px;
-  margin: 0;
+  margin: 0 0 20px;
   text-align: center;
 }
 
@@ -134,7 +129,6 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  padding-bottom: 60px;
   margin: 0;
   text-align: center;
 }
@@ -145,19 +139,18 @@
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: auto;
+  margin: 0 auto;
+  padding: 60px 0 0;
   overflow: visible;
 }
 
 .table__cell {
   width: 250px;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .table__cell:nth-of-type(n+5) {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .table__heading {
@@ -171,10 +164,11 @@
   font-size: 18px;
   line-height: 1.2;
   margin: 0;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .feynman {
+  background-color: #f2f2f2;
   height: 890px;
   display: flex;
   flex-direction: column;
@@ -190,6 +184,7 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
+  z-index: 1;
 }
 
 .feynman__subtitle {
@@ -197,6 +192,7 @@
   font-size: 36px;
   font-weight: normal;
   margin: 0;
+  z-index: 1;
 }
 
 .feynman__link {
@@ -214,24 +210,25 @@
   height: 637px;
   width: 867px;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   left: 0;
   bottom: 0;
 }
 
 .kaufman {
-  background-color: black;
+  background-color: #1f1f1f;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  padding: 90px 0;
 }
 
 .section-title_theme_dark {
   color: white;
   z-index: 1;
-  padding-top: 90px;
+  margin-bottom: 20px;
 }
 
 .section-subtitle_theme_dark {
@@ -241,19 +238,19 @@
 }
 
 .table_theme_dark {
-  margin-bottom: 90px;
+  padding-top: 80px;
 }
 
 .table__cell_theme_dark {
+  margin-bottom: 80px;
   width: 200px;
   color: white;
   margin-right: 0;
-  padding-top: 80px;
-  padding-bottom: 80px;
   z-index: 1;
 }
 
 .kaufman_triangle {
+  background: url('../images/kaufman-triangle.svg');
   position: absolute;
   height: 877px;
   width: 877px;
@@ -264,16 +261,14 @@
 .footer {
   display: flex;
   justify-content: center;
-  min-height: 350px;
-  background-color: black;
+  min-height: 250px;
+  background-color: #1f1f1f;
+  padding: 60px 0 40px;
 }
 
 .footer__columns {
-  margin-top: 60px;
-  margin-bottom: 40px;
   width: 90%;
   display: flex;
-  justify-content: center;
   justify-content: space-between;
 }
 
@@ -286,30 +281,37 @@
 .footer__column_content_copyright {
   flex-basis: 711px;
   justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo_place_footer {
+  height: 35px;
 }
 
 .footer__author {
-  margin: 0;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
 }
 
 .footer__column-heading {
-  padding-bottom: 20px;
-  margin: 0;
+  margin: 0 0 20px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
 }
 
 .footer__column-links {
-  padding-bottom: 16px;
-  display: flex;
+  margin-bottom: 16px;
   flex-direction: column;
   line-height: 30px;
   font-size: 18px;
+}
+
+.footer__link-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 .footer__column-link {
@@ -318,7 +320,7 @@
 }
 
 .footer__social-icon {
-  padding-right: 10px;
+  margin-right: 10px;
   height: 16px;
   width: 16px;
 }
