@@ -5,6 +5,10 @@
 
 В проекте присутствует анаимация выполненная с помощью __@keyframes__ и добавлены видео с использованием __iframe__.
 
+**Github-pages**
+
+* [https://lavrukhinav.github.io/how-to-learn/](https://lavrukhinav.github.io/how-to-learn/)
+
 ___
 
 ### __Планы по доработке проекта:__
